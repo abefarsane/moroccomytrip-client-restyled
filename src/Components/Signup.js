@@ -107,7 +107,7 @@ export default function Signup() {
 
 
     return (
-        <div className='signForm'>
+        <div className='signForm contain-desktop'>
             <section className='header'>
                 <section>
                     <h1 className='h1-header'>Sign up</h1>
