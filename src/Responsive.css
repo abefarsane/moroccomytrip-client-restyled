@@ -105,6 +105,12 @@
         margin: auto;
     }
 
+    .css-xs36yl .contain-desktop{
+        width: 100% !important;
+        padding: 5%;
+    }
+    
+
     .signForm {
         margin-top: 10%;
     }
