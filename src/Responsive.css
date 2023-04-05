@@ -101,8 +101,12 @@
 
 
     .contain-desktop {
-        width: 50%;
+        width: 35%;
         margin: auto;
+    }
+
+    .signForm {
+        margin-top: 10%;
     }
 
     .log-form {

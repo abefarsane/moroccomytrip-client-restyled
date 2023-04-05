@@ -79,7 +79,7 @@ h2 {
     font-weight: 600;
     border-radius: var(--borderRadius);
     outline: none;
-    border: 2px solid var(--h1Color);
+    border: 4px solid var(--h1Color);
     background-color: white;
 }
 
