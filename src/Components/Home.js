@@ -24,7 +24,7 @@ export default function Home() {
                 </section>
             
 
-
+            <h2 className='slider-h2'>Some of our packages</h2>
             <section className='slider'>
                 <CustomSlider />
             </section>

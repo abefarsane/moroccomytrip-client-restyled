@@ -2,6 +2,7 @@
     font-family: 'Poppins';
 }
 
+
 :root {
     --borderRadius: 7.5px;
     --borderDensity: 0.5px;
@@ -21,11 +22,9 @@
     --transitionTF: cubic-bezier(0.645, 0.045, 0.355, 1);
 
 
-    --h1Color: #9b3400;
-    --mainColor: #ffffff;
+    --main-color: #E74646;
+    --secondary-color: #E9A178;
     --secColor: #000000;
-
-    --smText: #FF8200;
 
     --colorPrimary1: #000000;
     --colorPrimary2: #0E402D;
@@ -38,20 +37,20 @@
 }
 
 #root, html {
-    background-color: var(--mainColor);
+    background-color: white;
 }
 
 h4 {
-    color: var(--h1Color);
+    color: var(--main-color);
 }
 
 h5 {
-    color: var(--smText);
+    color: var(--secondary-color);
 }
 
 h2 {
     font-weight: 900 !important;
-    color: var(--h1Color);
+    color: var(--main-color);
 }
 
 .modal-content {
@@ -79,7 +78,7 @@ h2 {
     font-weight: 600;
     border-radius: var(--borderRadius);
     outline: none;
-    border: 4px solid var(--h1Color);
+    border: 4px solid var(--main-color);
     background-color: white;
 }
 
@@ -99,38 +98,38 @@ h2 {
 
 
 .h1-header {
-    color: var(--h1Color);
+    color: var(--main-color);
     font-weight: 1000;
     font-size: 2em;
 }
 
 .h2-title {
-    color: var(--mainColor);
+    color: var(--secondary-color);
     font-weight: 800;
     font-size: 1.8em;
 }
 
 .h5-response {
-    color: var(--h1Color);
+    color: var(--main-color);
     font-weight: 700;
 }
 
 .input-text-dark {
     width: 100%;
-    border: 4px solid var(--h1Color);
+    border: 4px solid var(--main-color);
     border-radius: var(--borderRadius);
     outline: none
 }
 
 .sm-comment {
-    color: var(--h1Color);
+    color: var(--main-color);
     opacity: 75%;
     font-weight: 600;
     font-size: .9em;
 }
 
 .sm-label {
-    color: var(--h1Color);
+    color: var(--main-color);
     text-transform: uppercase;
     font-weight: 600;
     opacity: 75%;

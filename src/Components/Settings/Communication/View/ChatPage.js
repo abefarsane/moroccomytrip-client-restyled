@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
 import React, { Component, useContext, useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import { faChartSimple, faFaceSmile, faIndustry, faMessage, faPaperPlane, faUser, faUserCircle, faPeopleGroup, faUserShield, faBackspace, faBackward, faChevronLeft} from '@fortawesome/free-solid-svg-icons';
+import { faChartSimple, faFaceSmile, faIndustry, faMessage, faPaperPlane, faUser, faUserCircle, faPeopleGroup, faUserShield, faBackspace, faBackward, faChevronLeft, faCheck} from '@fortawesome/free-solid-svg-icons';
 import { AuthContext } from '../../../../Tools/Context/AuthContext';
 import { text } from '@fortawesome/fontawesome-svg-core';
 import io from 'socket.io-client'
@@ -130,7 +130,7 @@ export default function ChatPage() {
 
                     
                 </section>
-                <section className='chat-history'>
+                <section className='chat'>
                 {
                         chatHistory.length < 1 ? (
                                 <h3>Start a new conversation!</h3>
@@ -147,32 +147,13 @@ export default function ChatPage() {
                                 ];
 
                                 return (
-                                    key == 0 ? (
-                                        <>
-                                            <section className={'message-package ' + style}>
-                                                <section>
-                                                    <img src={url} />
-                                                    <h2>{chatHistory.Package.title}</h2>
-                                                    <h3>{x.text_body.split('_')[1]} <FontAwesomeIcon icon={faPeopleGroup}/></h3>
-                                                    <h3>{x.text_body.split('_')[2]} days</h3>
-                                                    <h3>{x.text_body?.split('_')[3]}</h3>
-                                                </section>
-                                            </section>
-                                            <section className={style}>
-                                                <p>{x.text_body?.split('_')[0]}</p>
-                                                <section className='date-sent'>
-                                                    <p>{date.getDate()} {monthNames[date.getMonth()]}</p>
-                                                </section>
-                                            </section>
-                                        </>
-                                    ) : (
-                                            <section className={style}>
-                                                <p>{x.text_body?.split('_')[0]}</p>
-                                                <section className='date-sent'>
-                                                    <p>{date.getDate()} {monthNames[date.getMonth()]}</p>
-                                                </section>
-                                            </section>
-                                    )
+                                    <section className={`message-outer ${style}`}>
+                                        <section className='message-inner'>
+                                            <section className='message-bubble'><p>{x.text_body?.split('_')[0]}</p></section>
+                                            <section className='message-action'></section>
+                                            <section className='message-spacer'></section>
+                                        </section>
+                                    </section>
                                 )
                             })
                         )

@@ -15,6 +15,7 @@ import { Routes, Route } from 'react-router-dom';
 import './Tools/sComponents/SmallComponents.css'
 import './Components/ComponentsStyle.css'
 import './Responsive.css'
+import Footer from './Components/Footer';
 
 import ReactDOM from "react-dom/client";
 import {
@@ -24,7 +25,7 @@ import {
 import Results from './Components/Results';
 import { Container } from 'react-bootstrap';
 import Messages from './Components/Settings/Communication/Messages';
-import BookingPage from './Components/Settings/Communication/View/BookingPage';
+import BookingPage from './Components/Settings/Communication/View/BookingPage'
 
 
 function App() {
@@ -59,6 +60,7 @@ function App() {
       
 
       </div>
+      <Footer />
     </div>
   );
 }

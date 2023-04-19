@@ -7,9 +7,9 @@ export const AuthContext = createContext("")
 export const AuthContextProvider = ({children}) => {
 
 
-    const api = "https://morocco-my-trip-api.herokuapp.com"
+    const api = "http://localhost:3001"
     
-
+//https://morocco-my-trip-api.herokuapp.com
     const [authState, setAuthState] = useState({
         email: "",
         username: "",
